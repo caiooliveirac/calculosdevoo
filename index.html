@@ -1,0 +1,101 @@
+<html lang="pt">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+        <title>Calculadoras de Voo</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form id="formul">
+        <div class="container">
+        <h1>Calculadoras de Voo</h1>
+        <div class="container-dentro">
+        <h2>Interpolação linear</h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Coluna da Tabela</th>
+                <th scope="col">Dados do seu caso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Valor abaixo</th>
+                <td><input type="number" name="xl" id="xl" value=""></input></td>
+                <td><input type="number" name="fl" id="fl"></td>
+               
+            </tr>
+            <tr>
+                <th scope="row">Seu valor</th>
+                <td><input type="number" name="xq" id="xq"></td>
+                <td><h3 class="result" id="result">0</h3></td>
+                
+            </tr>
+            <tr>
+                <th scope="row">Valor acima</th>
+                <td><input type="number" name="x2" id="x2"></td>
+                <td><input type="number" name="f2" id="f2"></td>
+                
+            </tr>
+            
+        </tbody>
+       
+        </table>
+        
+        <button class="btn-primary" onclick="interp1()" type="button">Enviar</button>
+    </form>
+    
+    </div>
+  
+    <br>
+    <form id="formul2">
+        <div class="container2">
+    <h2>Interpolação bilinear</h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col"><input type="text" name="" id="" placeholder="Coluna 1"> </th>
+                <th scope="col"><input type="text" name="" id="" placeholder="Coluna 2"> </th>
+                <th scope="col"><input type="text" name="" id="" placeholder="Coluna 3"> </th>
+                
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"><input type="text" name="" id="" placeholder="Valor abaixo"> </th>
+                <td><input type="number" name="xl" id="xl" value=""></input></td>
+                <td><h3 class="result" id="result-cima"></h3></td>
+                <td><input type="number" name="fl" id="fl"></td>
+               
+            </tr>
+            <tr>
+                <th scope="row"><input type="text" name="" id="" placeholder="Seu valor"> </th>
+                <td><h3 class="result" id="result-esq"></h3></td>
+                <td><h3 class="result" id="result2">0</h3></td>
+                <td><h3 class="result" id="result-dir"></h3></td>
+                
+            </tr>
+            <tr>
+                <th scope="row"><input type="text" name="" id="" placeholder="Valor acima"> </th>
+                <td><input type="number" name="x2" id="x2"></td>
+                <td><h3 class="result" id="result-baixo"></h3></td>
+                <td><input type="number" name="f2" id="f2"></td>
+                
+            </tr>
+            
+        </tbody>
+       
+        </table>
+        
+        <button class="btn-primary" onclick="biinterp()" type="button">Enviar</button>
+    </form>
+    </div>
+    </div>
+        
+    </body>
+    <script src="scripts.js"></script>
+</html>

@@ -1,0 +1,17 @@
+.container {
+    margin-top: 5vh;
+    padding: 5vw;
+   
+}
+
+.container-dentro {
+    margin-top: 2vh;
+    padding: 1vw;
+}
+
+.result {
+    margin: auto;
+    padding: 0.5%;
+    margin-left: 15%;
+
+}
