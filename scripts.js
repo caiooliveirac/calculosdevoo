@@ -31,19 +31,19 @@ function biinterp() {
     let enc33 = parseFloat(document.getElementById("formul2")[9].value)
     let mediacima = (((enc13-enc11)/(col3 - col1))*(col2-col1))+enc11
     let interpcima = document.getElementById("result-cima")
-    interpcima.innerHTML = mediacima
+    interpcima.innerHTML = mediacima.toFixed(2)
     let mediabaixo = (((enc33-enc31)/(col3 - col1))*(col2-col1))+enc31
     let interpbaixo = document.getElementById("result-baixo")
-    interpbaixo.innerHTML = mediabaixo
+    interpbaixo.innerHTML = mediabaixo.toFixed(2)
     let mediadir = (((enc33-enc31)/(cima - baixo))*(seuvalor-baixo))+enc31
     let interpdir = document.getElementById("result-dir")
-    interpdir.innerHTML = mediadir
+    interpdir.innerHTML = mediadir.toFixed(2)
     let mediaesq = (((enc31-enc11)/(cima - baixo))*(seuvalor-baixo))+enc11
     let interpesq = document.getElementById("result-esq")
-    interpesq.innerHTML = mediaesq
+    interpesq.innerHTML = mediaesq.toFixed(2)
     let vazio2 = document.getElementById("result2")
     let interpfin = (((mediabaixo-mediacima)/(cima - baixo))*(seuvalor-baixo))+mediacima
-    vazio2.innerHTML = interpfin
+    vazio2.innerHTML = interpfin.toFixed(2)
 }
 // x2 - col3      x1 - col1      xq - col2       enc13 - f2      enc 11  - f1
 // x2 - cima      x1 - baixo     xq - seuvalor   enc33 - f2       enc 13 - f1
