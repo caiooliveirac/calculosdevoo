@@ -8,10 +8,26 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-            
+            <h1>Calculadoras de Voo</h1> 
             </nav>
-        <form id="formul">
         <div class="container">
+
+
+    <form id="formulpres">  
+        <h1>Conversor de pressão</h1>
+        <div class="container-dentro pressure">
+            <div class="exibirconversoes">
+            <h2>Converter hPa -> inHg</h2>
+            <h3><input type="number" name="presshpa" id="presshpa" placeholder="1013.2"> ----> </h3><h2 id="resultinhg"></h2> </div>
+            <div class="exibirconversoes">
+            <h2>Converter inHg -> hPa</h2>
+            <h3><input type="number" name="presshg" id="presshg" placeholder="29.92"> ----> </h3><h2 id="resultinhpa"></h2> </div>
+            <button type="button" class="btn-prim" onclick="calcpress()">Enviar</button>
+        </div>
+    </form>
+
+
+        <form id="formul">
         <h1>Calculadoras de Voo</h1>
         <div class="container-dentro">
         <h2>Interpolação linear</h2>

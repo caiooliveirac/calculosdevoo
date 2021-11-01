@@ -1,5 +1,18 @@
+// conversores de pressão
+function calcpress() {
+let inputinhpa = document.getElementById("formulpres")[0].value
+let inputinhg = document.getElementById("formulpres")[1].value
+console.log(inputinhpa)
+let resulthg = document.getElementById("resultinhg")
+let resultado = inputinhpa / 33.864
+resulthg.innerHTML = resultado.toFixed(2)
+let resulthpa = document.getElementById("resultinhpa")
+let resultado2 = ((inputinhg * 100) * 33864) / 100000
+resulthpa.innerHTML = resultado2.toFixed(1)
+}
 
 
+// captação de dados para interpolação
 let x1 = document.getElementById("formul")[0].value
 let f1 = document.getElementById("formul")[1].value
 let xq = document.getElementById("formul")[2].value
@@ -15,7 +28,7 @@ function interp1() {
     let f2 = parseFloat(document.getElementById("formul")[4].value)
     let vazio = document.getElementById("result")
     let interp = (((f2-f1)/(x2 - x1))*(xq-x1))+f1
-    vazio.innerHTML = interp
+    vazio.innerHTML = interp.toFixed(2)
 }
 
 function biinterp() {

@@ -24,6 +24,13 @@ body{
 
 }
 
+.exibirconversoes {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 0.7em;
+	margin-bottom: 0.9em;
+}
+
 .btn-prim {
 	background-color:#3C55AC;
 	color: #fff;
@@ -43,3 +50,6 @@ body{
 }
 
 
+#formulpres {
+	margin-top: 3vh;
+}
