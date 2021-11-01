@@ -7,7 +7,7 @@ let x2 = document.getElementById("formul")[3].value
 let f2 = document.getElementById("formul")[4].value
 
 
-function interpl() {
+function interp1() {
     let x1 = parseFloat(document.getElementById("formul")[0].value)
     let f1 = parseFloat(document.getElementById("formul")[1].value)
     let xq = parseFloat(document.getElementById("formul")[2].value)
