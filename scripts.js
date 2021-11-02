@@ -1,3 +1,19 @@
+
+// conversores de temperatura
+function calctemp() {
+    let inputincels = document.getElementById("formultemp")[0].value
+    let inputinfar = document.getElementById("formultemp")[1].value
+    console.log(inputincels)
+    let resultfar = document.getElementById("resultinfar")
+    let resultado = ((inputincels * 18) + 320) / 10
+    resultfar.innerHTML = resultado.toFixed(1)
+    let resultcels = document.getElementById("resultincels")
+    let resultado2 = ((inputinfar - 32) * 10 ) / 18
+    resultcels.innerHTML = resultado2.toFixed(1)
+    }
+    
+
+
 // conversores de pressão
 function calcpress() {
 let inputinhpa = document.getElementById("formulpres")[0].value

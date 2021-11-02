@@ -12,6 +12,19 @@
             </nav>
         <div class="container">
 
+            <form id="formultemp">  
+                <h1>Conversor de Temperaturas</h1>
+                <div class="container-dentro pressure">
+                    <div class="exibirconversoes">
+                    <h2>Converter Celsius -> Fahrenheit</h2>
+                    <h3><input type="number" name="tempcels" id="tempcels" placeholder="15"> ----> </h3><h2 id="resultinfar"></h2> </div>
+                    <div class="exibirconversoes">
+                    <h2>Converter Fahrenheit -> Celsius </h2>
+                    <h3><input type="number" name="tempfar" id="tempfar" placeholder="59"> ----> </h3><h2 id="resultincels"></h2> </div>
+                    <button type="button" class="btn-prim" onclick="calctemp()">Enviar</button>
+                </div>
+            </form>
+
 
     <form id="formulpres">  
         <h1>Conversor de pressão</h1>
